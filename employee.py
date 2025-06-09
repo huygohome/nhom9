@@ -34,7 +34,8 @@ class employeeClass:
         cmb_search.place(x=10, y=10, width=180)
         cmb_search.current(0)
 
-        txt_search = Entry(SearchFrame, font=("goudy old style", 15), bg="lightyellow").place(x=200, y=10)
+        # txt_search = Entry(SearchFrame, font=("goudy old style", 15), bg="lightyellow").place(x=200, y=10)
+        txt_search = Entry(SearchFrame,textvariable=self.var_searchtxt, font=("goudy old style", 15), bg="lightyellow").place(x=200, y=10)
         btn_search = Button(SearchFrame,text="Search",command=self.search, font=("goudy old style", 15), bg="#4caf50",fg="white",cursor="hand2").place(x=410, y=10, width=150,height=30)
 
         # === title ====
